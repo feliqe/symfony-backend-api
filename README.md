@@ -16,8 +16,8 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 Si aún no tienes el repositorio del proyecto, clónalo ejecutando el siguiente comando:
 
 ```bash
-git clone <url-del-repositorio>
-cd <nombre-del-directorio-del-proyecto>
+git clone <https://github.com/feliqe/symfony-backend-api>
+cd symfony-backend-api
 ```
 
 ### 2. Instalar las Dependencias del Proyecto
@@ -94,4 +94,54 @@ Si deseas detener el servidor de Symfony, ejecuta el siguiente comando:
 
 ```bash
 symfony server:stop
+```
+
+### 9. Crud ejecutar JSON
+
+Si deseas ejecuyar el json para probar la funcionalidad de CRUD:
+
+Crear
+```bash
+link [POST]
+[http://127.0.0.1:8000/tasks/crear]
+
+JSON
+{
+  "name":"tarea1",
+  "description":"realizar1",
+  "expiration_date": "2025-01-01",
+  "state": true,
+  "priority":"alta",
+  "responsible":"pedro"
+}
+```
+
+Ver
+```bash
+link [GET]
+[http://127.0.0.1:8000/tasks/view]
+
+```
+
+Actualizar
+```bash
+link [PUT]
+[http://127.0.0.1:8000/tasks/update/1]
+
+JSON
+{
+  "name":"tarea1",
+  "description":"realizar1",
+  "expiration_date":"2025-03-01",
+  "state":false,
+  "priority":"baja",
+  "responsible":"felipe"
+}
+```
+
+Eliminiar
+```bash
+link [DELETE]
+[http://127.0.0.1:8000/tasks/delete/1]
+
 ```
