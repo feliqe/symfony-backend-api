@@ -22,8 +22,8 @@ class Staff
     #[ORM\Column(length: 255)]
     private ?string $expirationDate = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $state = null;
+    #[ORM\Column(type: "boolean")]
+    private ?bool  $state = null;
 
     #[ORM\Column(length: 255)]
     private ?string $priority = null;
@@ -73,12 +73,12 @@ class Staff
         return $this;
     }
 
-    public function getState(): ?string
+    public function getState(): ?bool
     {
         return $this->state;
     }
 
-    public function setState(string $state): static
+    public function setState(bool $state): static
     {
         $this->state = $state;
 
