@@ -98,7 +98,7 @@ symfony server:stop
 
 ### 9. Crud ejecutar JSON
 
-Si deseas ejecuyar el json para probar la funcionalidad de CRUD:
+Si deseas ejecuTar el json para probar la funcionalidad de CRUD:
 
 Crear
 ```bash
