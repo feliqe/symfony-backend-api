@@ -7,7 +7,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 - **PHP**: Versión 7.4 o superior.
 - **Composer**: Gestor de dependencias para PHP.
 - **Symfony CLI**: Herramienta de línea de comandos de Symfony.
-- **Base de datos**: Una base de datos como MySQL, PostgreSQL o la que esté configurada en el proyecto.
+- **Base de datos**: Una base de datos como MySQL la que esté configurada en el proyecto.
 
 ## Pasos para Ejecutar el Proyecto
 
