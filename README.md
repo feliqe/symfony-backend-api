@@ -9,6 +9,15 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 - **Symfony CLI**: Herramienta de línea de comandos de Symfony.
 - **Base de datos**: Una base de datos como MySQL la que esté configurada en el proyecto.
 
+## Configuración de MySQL con XAMPP
+Si estás utilizando XAMPP, asegúrate de haber cambiado el puerto de MySQL a 3307 y creado la base de datos con el nombre backend-bd.
+
+La conexión debe estar configurada en el archivo .env de la siguiente manera:
+
+```bash
+DATABASE_URL="mysql://root@localhost:3307/backend-bd"
+```
+
 ## Pasos para Ejecutar el Proyecto
 
 ### 1. Clonar el Repositorio
